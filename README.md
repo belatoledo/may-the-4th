@@ -2,7 +2,7 @@
 <img src="https://github.com/belatoledo/may-the-4th/blob/main/github/star%20wars.png?raw=true" alt="Título"/>
 </p>
 
-<h5 align="center">To celebrate Star Wars Day, I made Princess Leia entirely in CSS and some HTML divs.</h5> 
+<h3 align="center">To celebrate Star Wars Day, I made Princess Leia entirely in CSS and some HTML divs.</h3> 
 
 </br>
 
@@ -15,7 +15,7 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/belatoledo/may-the-4th/main/github/original-inspiration.webp" alt="Original"/>
 
-*<h6 align="center" font-size="12px"> [Click here for original art](https://github.com/belatoledo/may-the-4th/blob/main/github/My%20result.gif?raw=true)</h6>*
+*<h6 align="center" font-size="12px"> [Click here for original art](https://dribbble.com/shots/3478172-Happy-Star-Wars-Day)</h6>*
 </p>
 
 
