@@ -1,19 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap');
+
+:root {
+  --color-dark-brown:#492104;
+  --color-light-brown: #693007;
+  --color-bg: #7f76ce;
+  --color-big-circle: #000;
+  --color-small-circle: #4ea53f;
+
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom:  0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .container {
-  width: 700px;
-  height: 500px;
+  width: 70rem;
+  height: 50rem;
   background: #7f76ce;
+  position: fixed;
 }
 
 .big-circle {
@@ -23,8 +41,8 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  width: 375px;
-  height: 375px;
+  width: 37.5rem;
+  height: 37.5rem;
   background: #000;
   border-radius: 50%;
 }
@@ -36,16 +54,16 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  width: 275px;
-  height: 275px;
+  width: 27.5rem;
+  height: 27.5rem;
   background: #4ea53f;
   border-radius: 50%;
 }
 
 img {
   
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   background: #4ea53f;
   border-radius: 50%;
   
@@ -90,13 +108,13 @@ img {
 
 .head {
   position: absolute;
-  width: 130px;
-  height: 120px;
+  width: 13rem;
+  height: 12rem;
   background: #fdd5b4;
   border-radius: 68% 62% 52% 52%;
 
   left: 50%;
-  top: 34.3%;
+  top: 21%;
   transform: translate(-50%, 50%);
 
   z-index: 2;
@@ -104,16 +122,18 @@ img {
 
 .hair {
   position: relative;
+
+
 }
 
 .hair-left {
   position: absolute;
-  width: 100px;
-  height: 45px;
+  max-width: 10rem;
+  max-height: 4.5rem;
   background-color: #693007;
   border-radius: 50%;
   transform: rotate(35deg);
-  top: 166px;
+  top: 16.6rem;
   right: 38%;
 
   z-index: 2; 
@@ -121,12 +141,12 @@ img {
 
   .up-hair-left {
     position: absolute;
-    width:90px;
-    height: 25px;
+    width: 9rem;
+    height: 2.5rem;
     background-color: #693007;
     border-radius: 50%;
     transform: rotate(40deg);
-    top: 175px;
+    top: 17.5rem;
     right: 38.42%;
 
     border: 5px solid #693007;
@@ -137,12 +157,12 @@ img {
 
 .shadow-hair-left {
   position: absolute;
-  width: 80px;
-  height: 25px;
+  width: 8rem;
+  height: 2.5rem;
   background-color: #693007;
   border-radius: 50%;
   transform: rotate(39deg);
-  top: 170px;
+  top: 17rem;
   right: 39%;
 
   border: 3px solid #693007;
@@ -153,12 +173,12 @@ img {
 
 .hair-right {
   position: absolute;
-  width: 100px;
-  height: 45px;
+  width: 10rem;
+  height: 4.5rem;
   background-color: #693007;
   border-radius: 50%;
   transform: rotate(-35deg);
-  top: 166px;
+  top: 16.6rem;
   left: 38%;
 
   z-index: 2;
@@ -166,12 +186,12 @@ img {
 
 .up-hair-right {
   position: absolute;
-  width:75px;
-  height: 27px;
+  width:7.5rem;
+  height: 2.7rem;
   background-color: #693007;
   border-radius: 50%;
   transform: rotate(-25deg);
-  top: 179px;
+  top: 17.9rem;
   right: 49%;
   border: 5px solid #693007;
   box-shadow: 1px 3px #492104;
@@ -181,12 +201,12 @@ img {
 
 .shadow-hair-right {
   position: absolute;
-  width: 73px;
-  height: 23px;
+  width: 7.3rem;
+  height: 2.3rem;
   background-color: #693007;
   border-radius: 50%;
   transform: rotate(-35deg);
-  top: 172px;
+  top: 17.2rem;
   right: 48.89%;
 
   border: 2px solid #693007;
@@ -199,12 +219,12 @@ img {
 .coke-left {
   position: absolute;
   background-color: #693007;
-  width: 45px;
-  height: 55px;
+  width: 4.5rem;
+  height: 5.5rem;
   border-radius: 50%;
   transform: rotate(-15deg);
-  top: 206px;
-  left: 252px;
+  top: 20.6rem;
+  left: 25.2rem;
 
   border: 1px solid #693007;
   box-shadow: 1px -2px #693007d3;
@@ -215,12 +235,12 @@ img {
 .shadow-coke-left {
   position: absolute;
   background-color: #492104;
-  width: 50px;
-  height: 40px;
+  width: 5rem;
+  height: 4rem;
   border-radius: 50%;
   transform: rotate(-15deg);
-  top: 212px;
-  left: 256px;
+  top: 21.2rem;
+  left: 25.6rem;
   
   border: 4px solid #492104;
   box-shadow: 1px -11px #693007;
@@ -233,12 +253,12 @@ img {
 .coke-right {
   position: absolute;
   background-color: #693007;
-  width: 45px;
-  height: 55px;
+  width: 4.5rem;
+  height: 5.5rem;
   border-radius: 50%;
   transform: rotate(15deg);
-  top: 207px;
-  right: 253px;
+  top: 20.7rem;
+  right: 25.3rem;
 
   z-index: 1;
 }
@@ -246,12 +266,12 @@ img {
 .shadow-coke-right {
   position: absolute;
   background-color: #492104;
-  width: 50px;
-  height: 40px;
+  width: 5rem;
+  height: 4rem;
   border-radius: 50%;
   transform: rotate(15deg);
-  top: 213px;
-  right: 256px;
+  top: 21.3rem;
+  right: 25.6rem;
   
   border: 3px solid #492104;
   box-shadow: 1px -4px #693007;
@@ -262,9 +282,9 @@ img {
 
 .mouth {
   position: absolute;
-  width: 20px;
-  height: 10px;
-  top: 51%;
+  width: 2rem;
+  height: 1rem;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   
@@ -277,10 +297,10 @@ img {
 
 .eyebrown-left {
   position: absolute;
-  width: 30px;
-  height: 15px;
-  top: 47%;
-  left: 47%;
+  width: 3rem;
+  height: 1.5rem;
+  top: 44%;
+  left: 46%;
   transform: translate(-50%, -50%);
   
   border-radius: 50%;
@@ -292,10 +312,10 @@ img {
 
 .eyebrown-right {
   position: absolute;
-  width: 30px;
-  height: 15px;
-  top: 47%;
-  right: 43.5%;
+  width: 3rem;
+  height: 1.5rem;
+  top: 44%;
+  right: 41.3%;
   transform: translate(-50%, -50%);
   
   border-radius: 50%;
@@ -307,10 +327,10 @@ img {
 
 .eye-left {
   position: absolute;
-  width: 20px;
-  height: 15px;
-  top: 48%;
-  left: 47%;
+  width: 2rem;
+  height: 1.5rem;
+  top: 47%;
+  left: 46%;
   transform: translate(-50%, -50%);
   
   border-radius: 50%;
@@ -322,10 +342,10 @@ img {
 
 .eye-right {
   position: absolute;
-  width: 20px;
-  height: 15px;
-  top: 48%;
-  right: 45%;
+  width: 2rem;
+  height: 1.5rem;
+  top: 47%;
+  right: 43.7%;
   transform: translate(-50%, -50%);
   
   border-radius: 50%;
@@ -334,17 +354,13 @@ img {
 
   z-index: 3;
 }
-.dress {
-  position: relative;
-  top: 67%;
-}
 
 .dress-neck {
   position: absolute;
-  width: 50px;
-  height: 15px;
+  width: 5rem;
+  height: 1.5rem;
   background-color: white;
-  top: 54.1%;
+  top: 57.8%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -353,10 +369,10 @@ img {
 
 .dress-chest {
   position: absolute;
-  width: 140px;
-  height: 100px;
+  width: 14rem;
+  height: 9.4rem;
   background-color: white;
-  top: 59.5%;
+  top: 67.9%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -365,11 +381,11 @@ img {
 
 .dress-right {
   position: absolute;
-  width: 40px;
-  height: 50px;
+  width: 4rem;
+  height: 5rem;
   background-color:#ffffff;
-  top: 58.68%;
-  left: 52.62%;
+  top: 65.7%;
+  left: 53.69%;
   transform: translate(-50%, -50%);
 
   border-radius: 43% 43% 62% 62% / 33% 33%;
@@ -382,11 +398,11 @@ img {
 
 .hand {
   position: absolute;
-  width: 30px;
-  height: 40px;
+  width: 3rem;
+  height: 4rem;
   background-color: #fdd5b4;
-  top: 57.1%;
-  left: 50.9%;
+  top: 63%;
+  left: 51%;
   transform: translate(-50%, -50%);
 
   border-radius: 50%;
@@ -399,14 +415,54 @@ img {
   position: absolute;
   color: #492104;
   font-weight: bold;
-  top: 57.1%;
-  left: 50.9%;
+  font-size: 1.5rem;
+  top: 63.1%;
+  left: 51%;
   transform: translate(-50%, -50%);
   transform: rotate(-41deg);
 
   filter: blur(0.5px);
 
   z-index: 3;
+}
+
+h1 {
+  position: absolute;
+  color: yellow;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 3.6rem;
+  bottom: 10px;
+  right: 10rem;
+
+  animation: appear 3s linear;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+@keyframes appear {
+  
+  0%
+  {
+    color: #f9fab1;
+    filter: blur(3px);
+  }
+  50% 
+  {
+    
+    opacity: 0.3;
+    filter: blur(1px)
+  }
+
+  90% 
+  {
+    opacity: 0.7;
+    ;
+  }
+  100% {
+    opacity: 1;
+  }
+
 }
 
 
